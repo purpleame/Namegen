@@ -16,6 +16,7 @@ public class FullNameApplication {
         String suffix = input.nextLine();
 
         String fullName = firstName + " " + middleInitial + ". " + lastName + " " + suffix;
-        System.out.println("Your full name is: " + fullName.trim());
+        System.out.println("Your full name is: " + fullName.trim().replaceAll("//s+", " "));
+
     }
 }
